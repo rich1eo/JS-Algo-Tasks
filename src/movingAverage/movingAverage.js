@@ -1,3 +1,8 @@
+/**
+ *
+ * @param {number[]} array
+ * @param {number} windowSize
+ */
 export function movingAverage(array, windowSize) {
   const result = [];
   let currentSum = 0;
