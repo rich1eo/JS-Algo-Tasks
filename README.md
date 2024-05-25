@@ -12,4 +12,4 @@ To test the task you can run a script: `npm run test`
 
 Чтобы протестировать задачу можно выполнить скрипт: `npm run test`
 
-Для тестирования используется Vitest
+Для тестирования используется **Vitest**
