@@ -12,7 +12,7 @@ export function is_correct_bracket_seq(brcts) {
   const stack = [];
 
   for (const word of brcts) {
-    // push opening bracket
+    // push opening bracket and continue
     if (!map[word]) {
       stack.push(word);
       continue;
@@ -24,7 +24,7 @@ export function is_correct_bracket_seq(brcts) {
       return false;
     }
 
-    // if "closing bracket" === last "open bracket" pop stack
+    // if "closing bracket" === last "open bracket" - pop last "open bracket" from stack
     stack.pop();
   }
 
